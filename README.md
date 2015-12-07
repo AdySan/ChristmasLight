@@ -9,13 +9,13 @@ Relay controlled by webserver running on an ESP8266
 
 </br>
 
-<img src="/images/circuit_bb.png" alt="Circuit" height="600">
+<img src="/images/circuit_bb.png" align="middle"alt="Circuit" height="600">
 
 </br>
 
-<img src="/images/screenshot.png" alt="webpage" height="600">
+<img src="/images/screenshot.png" align="middle" alt="webpage" height="600">
 
 </br>
 
-<img src="/images/edit.png" alt="File uploads" height="600">
+<img src="/images/edit.png" align="middle" alt="File uploads" height="600">
 
