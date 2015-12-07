@@ -9,7 +9,6 @@
 const char* ssid = "......";
 const char* password = ".....";
 const char* host = "ChristmasLight";
-
 const int relay = D3;
 
 ESP8266WebServer server(80);
@@ -113,7 +112,6 @@ void handleFileCreate(){
   path = String();
 }
 
-
 void handleFileList() {
   if(!server.hasArg("dir")) {server.send(500, "text/plain", "BAD ARGS"); return;}
   
@@ -138,8 +136,6 @@ void handleFileList() {
   output += "]";
   server.send(200, "text/json", output);
 }
-
-
 
 void setup() {
   pinMode(relay, OUTPUT);
@@ -201,9 +197,7 @@ void setup() {
   Serial.print(host);
   Serial.println(".local/edit to see the file browser");
 
-
   //SERVER INIT
-
   // handle relay on/off
   server.on ("/white", HTTP_GET, []() {
     if(!handleFileRead("/index.htm")) server.send(404, "text/plain", "FileNotFound");

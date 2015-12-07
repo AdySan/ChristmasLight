@@ -4,9 +4,12 @@ A simple evening hack to remotely control a relay connected to some [Christmas L
 
 ## Features
 
+ - USB (phone changer) powered
  - SPIFFS filesystem to store webpages
  - File uploads to SPIFFS filesystem via browser
  - OTA firmware update (using ArduinoOTA)
+ - mDNS to advertise host name
+ - Page doesn't scroll around on iOS Safari
 
 </br>
 <p align="center">
