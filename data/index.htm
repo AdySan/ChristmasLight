@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Christmas Light</title>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <style>
+    html, body {margin: 0; padding: 0; overflow: hidden}
+  </style>
+  
+</head>
+<body>
+  <script>
+    document.body.addEventListener('touchmove', function(event) {
+      console.log(event.source);
+      //if (event.source == document.body)
+        event.preventDefault();
+    }, false);
+
+    window.onresize = function() {
+      $(document.body).width(window.innerWidth).height(window.innerHeight);
+    }
+
+    $(function() {
+      window.onresize();
+    });0
+  </script>
+  <span style='display:block; width:100%; font-size:2em; font-family:Helvetica; text-align:center'>★Christmas Light★</span><br/>
+<a href='white'><span  align="center" style='display:block; background-color:; width:100%; height:40%;'><img src="https://cloud.githubusercontent.com/assets/744810/11172953/98d227c2-8bc4-11e5-96bd-3d68494d204d.png" alt="On" align="middle" style=" width:;height:100%;"></span></a><br/>
+<a href='black'><span  align="center" style='display:block; background-color:; width:100%; height:40%;'><img src="https://cloud.githubusercontent.com/assets/744810/11173031/ca9fe1d0-8bc5-11e5-9dcb-7641b60b5766.png" alt="Off" align="middle" style=" width:;height:100%;"></span></a>
+</body>
+</html>
