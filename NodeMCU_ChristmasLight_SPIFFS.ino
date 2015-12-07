@@ -6,8 +6,8 @@
 #include <ESP8266mDNS.h>
 #include <FS.h>
 
-const char* ssid = "AdyShan";
-const char* password = "aditya1tannu2";
+const char* ssid = "......";
+const char* password = ".....";
 const char* host = "ChristmasLight";
 
 const int relay = D3;
